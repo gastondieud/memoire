@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="fr">
     <head>
         <meta charset="utf-8">
@@ -15,13 +16,13 @@
 
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
 
-        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
 
-        <link href="css/tooplate-moso-interior.css" rel="stylesheet">
+        <link href="{% static 'css/tooplate-moso-interior.css' %}" rel="stylesheet">
         
 <!--
 
@@ -38,7 +39,7 @@ Bootstrap 5 HTML CSS Template
 
         <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html">S<span class="tooplate-red">MA</span><span class="tooplate-green">T</span></a>
+                <a class="navbar-brand" href="{% url 'home' %}">S<span class="tooplate-red">MA</span><span class="tooplate-green">T</span></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,7 +48,7 @@ Bootstrap 5 HTML CSS Template
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Acceuil</a>
+                            <a class="nav-link click-scroll" href="{% url 'home' %}">Acceuil</a>
                         </li>
 
                         <li class="nav-item">
@@ -142,11 +143,11 @@ Bootstrap 5 HTML CSS Template
                         </div>
 
                         <div class="col-lg-3 col-md-5 col-5 mx-lg-auto">
-                            <img src="images/sharing-design-ideas-with-family.jpg" class="A propos-image A propos-image-small img-fluid" alt="">
+                            <img src="{% static 'images/sharing-design-ideas-with-family.jpg' %}" class="A propos-image A propos-image-small img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-4 col-md-7 col-7">
-                            <img src="images/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering.jpg" class="A propos-image img-fluid" alt="">
+                            <img src="{% static 'images/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering.jpg' %}" class="A propos-image img-fluid" alt="">
                         </div>
 
                     </div>
@@ -410,7 +411,7 @@ Bootstrap 5 HTML CSS Template
                                     </div>
 
                                     <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
-                                        <img src="images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg" class="avatar-image img-fluid" alt="">
+                                        <img src="{% static 'images/avatar/pretty.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                         <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
                                             <p class="text-white mb-0">
@@ -434,7 +435,7 @@ Bootstrap 5 HTML CSS Template
                                     </div>
 
                                     <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
-                                        <img src="images/avatar/studio-portrait-emotional-happy-funny-smiling-boyfriend-man-with-heavy-beard-stands-with-arms-crossed-dressed-red-t-shirt-isolated-blue.jpg" class="avatar-image img-fluid" alt="">
+                                        <img src="{% static 'images/avatar/studio.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                         <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
                                             <p class="text-white mb-0">
@@ -458,7 +459,7 @@ Bootstrap 5 HTML CSS Template
                                     </div>
 
                                     <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
-                                        <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" class="avatar-image img-fluid" alt="">
+                                        <img src="{% static 'images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                         <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
                                             <p class="text-white mb-0">
@@ -482,7 +483,7 @@ Bootstrap 5 HTML CSS Template
                                     </div>
 
                                     <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
-                                        <img src="images/avatar/portrait-young-redhead-bearded-male-wears-white-t-shirt-keeps-his-eyes-closed-smiling-feels-happy-yellow.jpg" class="avatar-image img-fluid" alt="">
+                                        <img src="{% static 'images/avatar/portrait-young-redhead-bearded-male-wears-white-t-shirt-keeps-his-eyes-closed-smiling-feels-happy-yellow.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                         <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
                                             <p class="text-white mb-0">
@@ -506,7 +507,7 @@ Bootstrap 5 HTML CSS Template
                                     </div>
 
                                     <div class="reviews-bottom reviews-bottom-up d-flex align-items-center">
-                                        <img src="images/avatar/portrait-young-beautiful-woman-gesticulating.jpg" class="avatar-image img-fluid" alt="">
+                                        <img src="{% static 'images/avatar/portrait-young-beautiful-woman-gesticulating.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                         <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
                                             <p class="text-white mb-0">
@@ -698,12 +699,12 @@ Bootstrap 5 HTML CSS Template
         </footer>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/jquery.backstretch.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="{% static 'js/jquery.min.js' %} "></script>
+        <script src="{% static 'js/bootstrap.min.js'%}"></script>
+        <script src="{% static 'js/click-scroll.js' %}"></script>
+        <script src="{% static 'js/jquery.backstretch.min.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
 
     </body>
 </html>
